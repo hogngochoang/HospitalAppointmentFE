@@ -1,0 +1,101 @@
+.manage-examined-patient{
+    font-size: 14px;
+    height: 100vh;
+    padding: 2% 0 2%;
+    overflow: hidden;
+    .btn-booking{
+        display: flex;
+        gap: 5%;
+        .btn-detail{
+            width: 120px;
+            padding: 3% 2%;
+            background-color: transparent;
+            border: 1px solid #928888;
+            border-radius: 5px;
+            color: #0060ae;
+            cursor: pointer;
+        }
+        .btn-confirm:hover{
+            background-color: #0060ae;
+            color: #fff;
+        }
+    }
+    
+}
+.manage-patient{
+    font-size: 14px;
+    height: 100%;
+    padding: 2% 0 2%;
+    .btn-booking{
+        display: flex;
+        gap: 5%;
+        .btn-confirm, .btn-cancel{
+            width: 100px;
+            padding: 3% 2%;
+            background-color: transparent;
+            border: 1px solid #928888;
+            border-radius: 5px;
+            color: #0060ae;
+            cursor: pointer;
+        }
+        .btn-cancel{
+            color: red;
+        }
+        .btn-confirm:hover{
+            background-color: #0060ae;
+            color: #fff;
+        }
+        .btn-cancel:hover{
+            background-color: red;
+            color: #fff;
+        }
+    }
+}
+
+.title{
+    font-weight: 600;
+    font-size: 25px;
+}
+.list-patient{
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 3% 3%;
+    margin: 2% 3%;
+    .form-control{
+        font-size: 16px;
+    }
+}
+
+
+
+
+#patients {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#patients td, #patients th {
+    border-bottom: 1px solid #ddd;
+    padding: 15px;
+}
+
+
+// #patients tr:hover {background-color: #ddd;}
+
+#patients th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    color: #8796a1;
+    border: none;
+}
+#no{
+    width: 7%;
+    text-align: center;
+}
+#gender, #phone, #no{
+    text-align: center;
+}
+.row,label{
+    margin-bottom: 1%;
+}

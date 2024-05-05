@@ -1,0 +1,37 @@
+.doctor-schedule-user{
+    font-size: 16px;
+    input{
+        font-size: 16px;
+    }
+    .all-time{
+        .time{
+            background-color: #fff;
+            color: #0060ae;
+            font-size: 14px;
+            margin:2% 2% 2% 0;
+        }
+        p{
+            color: red;
+        }
+    }
+}
+
+.doctor-detail-patient{
+    font-size: 16px;
+    margin: 2% 7%;
+    input{
+        font-size: 16px;
+    }
+    input:disabled {
+        background-color: white;
+      }
+}
+
+.close{
+    border: none;
+    font-size: 30px;
+    background-color: transparent;
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 5px;
+}

@@ -1,0 +1,164 @@
+@import url('https://fonts.cdnfonts.com/css/bt-beau-sans');
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  transition: all .2s linear;
+  font-family: 'BT Beau Sans', sans-serif;   
+}
+html{
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+body {
+  margin: 0;
+}
+.header-container{
+    height: 10rem;
+    background-color: #fff;
+}
+
+.intro{
+  display: flex;
+  align-items: center;
+  height:110px;
+}
+
+.logo-container{
+  display: flex;
+  align-items: center;
+  margin-left: 50px;
+  width: 100%;
+  .logo img{
+    max-height: 120px;
+  }
+  .content{
+    font-weight: 400;
+    line-height: 12px;
+    margin-left: 10px;
+      padding-top: 10px;
+    .title, .sub-title{
+      padding-bottom:2% ;
+    }
+    .title{
+      font-size: 2.5rem;
+      font-weight: 700;
+    }
+    .sub-title{
+      font-size: 1.7rem;
+      font-weight: 300;
+      color: #333333;
+    }
+  }
+}  
+
+.support-container{
+  display: flex;
+  font-size: 16px;
+  width: 100%;
+  p{
+    color: #0060ae;
+  }
+  h4{
+    color:#ff5c00;
+  }
+  #phone-icon{
+    color: #0060ae;
+    height: 40px;
+    margin-right: 7%;
+  }
+  #time-icon, #location-icon{
+    color: #0060ae;
+    width: 16px;
+    height: auto;
+    margin-top: -.5rem;
+  }
+  .contact,.time,.hospital-location{
+    display: flex;
+    align-items: center;
+    gap: 2%;
+  }
+  .contact{
+    width: 30%;
+    margin-right: 5%;
+    .phone-number{
+      height: 40px;
+    }
+  }
+  .time-location{
+    width: 100%;
+    height: 40px;
+    p{
+      margin-bottom: .5rem;
+    }
+    h4{
+      margin-bottom: .3rem;
+    }
+  }
+}
+
+.navbar-container {
+  margin-top: 20px;
+  width: 100%;
+  background-color: #1e73be;
+  background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.5));
+  background-position: 50% 50%;
+  display: flex;
+  
+  .navbar{
+    margin: 0 50px;
+    width: 60%;
+  }
+}
+
+.dropdown{
+  position: relative;
+}
+
+.dropdown-content{
+  background-color: #fff;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  display:none;
+  position: absolute;
+  z-index: 1;
+  width: max-content;
+  transform: translate(-15%,0);
+  a{
+    font-size: 16px;
+    font-weight: 400;
+    color: #333333;
+    border-bottom: 1px solid #ececec;
+    padding: 10px 20px;
+    line-height: 1.3;
+    cursor: pointer;
+    display: block;
+    text-decoration: none;
+  }
+  a:hover{
+    color: #0060ae;
+  }
+}
+#home,#service,#news,#training,#about, #text{
+  color:#ffffffcc;
+  font-weight: 700;
+  font-size: 18px;
+  height: 50px;
+  text-decoration:none ;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 5px;
+}
+#home{
+  color: #fff;
+}
+#service:hover,#news:hover,#training:hover,#about:hover, #text:hover{
+  color: #fff;
+}
+.dropdown:hover .dropdown-content{
+  display: block;
+}
+

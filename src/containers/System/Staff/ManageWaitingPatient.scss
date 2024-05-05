@@ -1,0 +1,79 @@
+.manage-confirmed-patient{
+    font-size: 14px;
+    height: 100vh;
+    padding: 2% 0 2%;
+    overflow: hidden;
+}
+.manage-waiting-patient{
+    font-size: 14px;
+    height: 100%;
+    padding: 2% 0 2%;
+    overflow: hidden;
+}
+
+.title{
+    font-weight: 600;
+    font-size: 25px;
+}
+.list-patient{
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 3% 3%;
+    margin: 2% 3%;
+    margin-bottom: 0;
+    .form-control{
+        font-size: 16px;
+    }
+}
+.btn-booking{
+    display: flex;
+    gap: 5%;
+    .btn-confirm, .btn-cancel{
+        width: 85px;
+        padding: 4% 2%;
+        background-color: transparent;
+        border: 1px solid #928888;
+        border-radius: 5px;
+        color: #0060ae;
+        cursor: pointer;
+    }
+    .btn-cancel{
+        color: red;
+    }
+    .btn-confirm:hover{
+        background-color: #0060ae;
+        color: #fff;
+    }
+    .btn-cancel:hover{
+        background-color: red;
+        color: #fff;
+    }
+}
+
+#patients {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#patients td, #patients th {
+    border-bottom: 1px solid #ddd;
+    padding: 15px;
+}
+
+#patients th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    color: #8796a1;
+    border: none;
+}
+#no{
+    width: 7%;
+    text-align: center;
+}
+#gender, #phone, #no{
+    text-align: center;
+}
+.row,label{
+    margin-bottom: 1%;
+}

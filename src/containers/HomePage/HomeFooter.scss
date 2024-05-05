@@ -1,0 +1,174 @@
+.footer::before{
+    content:"";
+    background-image: url('../../assets/images/bg-footer.svg');
+    position: absolute;
+    height:20px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: -20px;
+}
+.footer{
+    background-color: rgb(0, 25, 45);
+    margin-top: 50px;
+    color: #fff;
+}    
+.heading{
+    display: flex;
+    align-items: center;
+    .logo-container{
+        width: 60%;
+        .title, .sub-title{
+            color: #fff;
+            padding-bottom:2% ;
+        }
+    }
+    .logo-container{
+        margin-top: 0px;
+    }
+    .social{
+        background-image: url('../../assets/images/col-newsletter-bg-left.svg');
+        height: 140px;
+        width: 45.4%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        .icon{
+            margin-left: 17%;
+            img{
+                height: 30px;
+                margin-right: 15px;
+            }
+        } 
+        .feedback{
+            display: flex;
+            align-items: center;
+            input{
+                height: 35px;
+                width: 350px;
+                border: none;
+                border-radius: 20px;
+                color: #fff;
+                background-color: rgba(255,255,255,.15);
+            }
+            button{
+                height: 35px;
+                width: 70px;
+                border: none;
+                border-radius: 20px;
+                background-color: #17b25c;
+                font-size: 16px;
+                font-weight: 500;
+                color: #fff;
+                position: absolute;
+                margin-left: 300px;
+            }
+            #envelope{
+                height: 20px;
+                color: #ffffff80;
+                position: absolute;
+                padding-left: 20px;
+            }
+        }
+            
+    }
+}
+.heading::after{
+    content: "";
+    height: 1.5px;
+    background-image: linear-gradient(to left,transparent, #696969);
+    width: 60%;
+    position: absolute;
+    left: 50px;
+    margin-top:140px;
+}
+.summary{
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 15% 15% 15% 55%;
+    gap: 3%;
+    .links{
+        color: #fff;
+        text-decoration: none;
+        font-size: 16px;
+        line-height: 2;
+        #icon{
+            display: none;
+        }
+
+    }
+    .links:hover{
+        padding-left: 20px;
+        #icon{
+            display: inline-block;
+            margin-right: 5px;
+            transition: ease-in-out 2s;
+        }
+    }
+    h3{
+        color: #80c6ff;
+        font-size: 20px;
+        font-weight: 400;
+        margin-bottom: 20px;
+    }
+
+    .hospital, .specilities,.services, .location{
+        display: flex;
+        flex-direction: column;
+    }
+    .location{
+        margin-left: 10%;
+        .address{
+            display: flex;
+            flex-direction: row;
+            gap: 40px;
+            margin-bottom: 20px;
+            h4{
+                font-size: 16px;
+                color: #ffffff80;
+            }
+            h3{
+                color: #fff;
+                font-size: 16px;
+                line-height: 0.7;
+            }
+        }
+    }
+    .address::after{
+        content: "";
+        height: 0.5px;
+        background-color:#38383880;
+        width: 30%;
+        position: absolute;
+        margin-top: -20px;
+    }
+    #cs1::after{
+        display: none;
+    }
+}
+
+.credit{
+    background-color: #01111e;
+    height: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    color: #ffffff80;
+    font-size: 14px;
+    font-weight: 400;
+    justify-content: space-between;
+    a{
+        display: flex;
+        text-decoration: none;
+        color: #ffffff80;
+        gap: 20px;
+
+        p:hover{
+            color: #fff;
+        }
+    }
+
+}

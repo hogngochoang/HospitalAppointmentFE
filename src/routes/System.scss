@@ -1,0 +1,19 @@
+
+.system-container{
+    display: flex;
+    gap: 5%;
+    background-color: #c9d6ff;
+
+    .navigator-container{
+        width: 17%;
+        margin-top: 5.5%;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+    .system-list{
+        width: 75%;
+        margin: 5.5% 0;
+        position: relative;
+        left: 20%;
+    }
+}

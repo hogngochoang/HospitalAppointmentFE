@@ -1,0 +1,162 @@
+.manage-statistic{
+    font-size: 14px;
+    padding: 2%;
+    width: 100%;
+    border-radius: 15px;
+    .title{
+        font-weight: 600;
+        font-size: 22px;
+        display: flex;
+        gap: 80%;
+        .select-week{
+            font-size: 14px;
+            width: 10%;
+            font-weight: 600;
+            border-radius: 15px;
+            padding-left: 2%;
+            display: flex;
+        }
+    }
+    .total{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap:5%;
+        .doctor{
+            margin-bottom: 0;
+            margin-top: 0;
+        }
+        .doctor, .staff, .admin{
+            margin-top: 5%;
+            background-color: #fff;
+            border-radius: 15px;
+            padding: 10px;
+            padding-left: 10%;
+            height: 70px;
+            width: 70%;
+            display: flex;
+            gap: 30%;
+            transform: translate(20%, 10%); /* Di chuyển biểu tượng đến giữa phông nền */
+
+            .total-content{
+                display: flex;
+                flex-direction: column;
+                h2{
+                    font-weight: 600;
+                    color: #8796a1;
+                    font-size: 14px;
+                }
+                h3{
+                    font-weight: 600;
+                }
+            }
+            .icon-wrapper {
+                position: relative; /* Thiết lập vị trí tương đối để có thể điều chỉnh vị trí của biểu tượng */
+                width: 50px; /* Điều chỉnh kích thước của phông nền */
+                height: 50px;
+                background-color: #ff2190; 
+                border-radius: 5px;
+            }
+
+            #staff-wrapper{
+                background-color: #0581fc; 
+            }
+
+            #admin-wrapper{
+                background-color: #16bdbf; 
+            }
+            
+            #icon-doctor {
+                position: absolute; /* Đặt biểu tượng tuyệt đối trong phông nền */
+                top: 50%; /* Đặt vị trí top ở giữa phông */
+                left: 50%; /* Đặt vị trí left ở giữa phông */
+                transform: translate(-50%, -50%); /* Di chuyển biểu tượng đến giữa phông nền */
+                font-size: 28px; /* Điều chỉnh kích thước của biểu tượng */
+                color: #fff;
+            }
+            
+        }
+    }
+    .statistic{
+        display: flex;
+        gap: 10%;
+        margin-top: 3%;
+        h2{
+            font-weight: 700;
+            color: #000;
+            font-size: 16px;
+        }
+        .amount-booking,.popular-doctor{
+            background-color: #fff;
+            border-radius: 15px;
+            padding: 2%;
+        }
+        .amount-booking{
+            width: 45%;
+            .amount{
+                display: flex;
+                gap: 40%;
+                .count{
+                    font-weight: 600;
+                    font-size: 20px;
+                    width: 10%;
+                    padding-bottom: 5px;
+                }
+            }
+            #no{
+                text-align: center;
+            }
+        }
+        .popular-doctor{
+            width: 45%;
+            
+        }
+    }
+    .user-table{
+        margin-top: 3%;
+        background-color: #fff;
+        border-radius: 15px;
+        padding: 2%;
+        h2{
+            font-weight: 700;
+            color: #000;
+            font-size: 16px;
+        }
+       
+    }
+    #users {
+        border-collapse: collapse;
+        width: 100%;
+        height: 100%;
+        
+    }
+    
+    #users td, #users th {
+        border-bottom: 1px solid #ddd;
+        padding: 15px 0;
+    }
+            
+    // #users tr:hover {background-color: #ddd;}
+    
+    #users th {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: center;
+        color: #8796a1;
+        border: none;
+    }
+    #no{
+        width: 7%;
+        text-align: center;
+    }
+    #gender, #phone, #role, #count{
+        text-align: center;
+    }
+    #email{
+        width: 25%;
+        padding-left: 20px;
+    }
+    .row,label{
+        margin-bottom: 1%;
+    }
+} 
+        
