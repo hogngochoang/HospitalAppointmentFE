@@ -23,6 +23,7 @@ class Booking extends Component {
             listDoctors: [],
             allDays: [],
             allAvailableTime: [],
+            checkItem: {},
 
             fullname:'',
             phonenumber:'',
@@ -39,8 +40,9 @@ class Booking extends Component {
             isOpenModalNotify: false,
             isOpenModalErrorNotify: false,
             isOpenModalFullNotify: false,
-            isOpenModalConfirmedNotify:false
+            isOpenModalConfirmedNotify:false,
         }
+        this.handleChangeCheckGender = this.handleChangeCheckGender.bind(this);
     }
 
     async componentDidUpdate(prevProps, prevState) {
@@ -117,9 +119,6 @@ class Booking extends Component {
 
             currentDate.add(1, 'day');
 
-            // if (currentDate.day() === 1) {
-            //     break;
-            // }
         }
 
         this.setState({
@@ -257,9 +256,24 @@ class Booking extends Component {
         console.log("check confirm button",this.state, formatDate, formatTime)
     }
 
+    handleChangeCheckGender = (item) => (event) => {
+        const { checked } = event.target;
+        if (checked) {
+            this.setState({
+                selectedGender: item.value
+            });
+        } else {
+            if (this.state.selectedGender === item.value) {
+                this.setState({
+                    selectedGender: null
+                });
+            }
+        }
+    };
 
     render() {
-        let {allDays, allAvailableTime} = this.state;
+        let {allDays, allAvailableTime, genders, selectedGender} = this.state;
+        console.log(genders, selectedGender)
         return (
             <>
                 <div className="booking">
@@ -302,12 +316,28 @@ class Booking extends Component {
                                 <Col md={6}>
                                 <FormGroup>
                                     <Label>Giới tính</Label>
-                                    <Select 
+                                    <div className='genders'>
+                                        {
+                                            genders && genders.length > 0 && 
+                                            genders.map((item, index) => {
+                                                return(
+                                                    <form id='gender'>
+                                                        <input type="checkbox"  className='genders' name={item.value} onChange={this.handleChangeCheckGender(item)} checked={this.state.selectedGender === item.value} />
+                                                        <label for={item.value}> {item.label}</label>
+                                                    </form>
+                                                    
+                                                )
+                                            })
+                                        }
+                                    </div>
+                                    
+
+                                    {/* <Select 
                                     value = {this.state.selectedGender}
                                     onChange={this.handleChangeSelectGender}
                                     options={this.state.genders} 
                                     className='genders'
-                                    /> 
+                                    />  */}
                                 </FormGroup>
                                 </Col>
                             </Row>

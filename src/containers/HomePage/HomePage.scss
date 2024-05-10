@@ -383,6 +383,7 @@
                     border-radius: 5px;
                     color: #000;
                     background-color: transparent;
+                    padding: 1% 2%;
                 }
                 button:hover{
                     border:1px solid #0060ae;
@@ -440,6 +441,17 @@
                 font-size: 16px;
                 transform: translate(0,-10%);
             }
+            .genders{
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+            }
+            input.genders{
+                height: 15px;
+                width: 15px;
+                position: relative;
+                top: 25px;
+                left: 30px;
+                }
             .form-group{
                 .css-13cymwt-control,  .css-t3ipsp-control{
                     border: none;
